@@ -1,0 +1,14 @@
+// Creating an applicatiom that converts from kelvin to farenheit
+// Temperature in Kelvin stored as variable
+var kelvinTemp = 301;
+
+// Temperature in celsius stored in variable 'celsius'
+var celsiusTemp = kelvinTemp - 273.15;
+
+// Convret celsius to farenheit stored as variable 'farenheit'
+var farenheitTemp = celsiusTemp * (9/5) + 32;
+
+// round the value of farenheit down and assign to 'farenheit'
+farenheitTemp * Math.floor(farenheit);
+
+//console.log(farenheitTemp);
