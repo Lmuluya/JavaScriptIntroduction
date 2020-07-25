@@ -9,6 +9,6 @@ var celsiusTemp = kelvinTemp - 273.15;
 var farenheitTemp = celsiusTemp * (9/5) + 32;
 
 // round the value of farenheit down and assign to 'farenheit'
-farenheitTemp * Math.floor(farenheit);
+farenheitTemp * Math.floor(farenheitTemp);
 
-//console.log(farenheitTemp);
+console.log(' The temperature is ' + farenheitTemp + ' degrees farenheit ');
