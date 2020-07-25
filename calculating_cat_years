@@ -1,0 +1,26 @@
+// Assign my age to the variable myAge
+var myAge = 20;
+
+// Assign the variable '2' to earlyYears
+var earlyYears = 2;
+
+// Multiply earlyYears by '25' to acount for early growth rates of the cats
+earlyYears *= 25;
+
+// Subtract '2' years from myAge and assign to latterYears to 
+// Account for growth rate of a cat after the first two years   
+var latterYears = myAge - 2;
+
+// Multiply latterYears value by '4' to total cat years
+latterYears *= 4;
+
+// Add value of 'earlyYears' and  'latterYears'
+// for the total age and assign to myAgeInCatYears
+ myAgeInCatYears = earlyYears + latterYears
+
+ // Assign the value of my name to the variable myName
+ var myName = 'Kalabaya';
+
+ console.log('My name is ' + myName + '. I am' * myAge 
+ + ' years old in human years which is' + myAgeInCatYears
+ + 'years old in cat years');
