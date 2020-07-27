@@ -1,6 +1,47 @@
-// Array methods
+// Array methods: This code needs to be input independent of each other
 //Using the pop methons
 var testScores = [72, 84, 68, 92]
 testScores.pop();
 testScores;
+
+// storing the pop() results in another variable 
+var lastTestScore = testScores.pop()
+
+// Placing a new test score in the data array
+testScores.push(74);
+testScores;
+
+//pushing more than one test score
+testScores.push(32, 96, 84);
+testScores;
+
+// Using the shift and unshift methods
+testScores.shift();
+testScores;
+
+// storing in a variable 
+var firstTest = testScores.shift();
+firstTest;
+
+// using the unshift methods for an array
+testScores = [86, 56, 71, 93]
+testScores.unshift(75, 32, 52)
+
+testScores;
+// STACKS works on the principal of last in first out (LIFO)
+//QUEUES work on the proncipal of first in first out (FIFO)
+
+// Shopping list
+
+var shoppingList = ['apples','pizza','chicken','mushrooms', 'oranges', 'beef']
+shoppingList;
+
+// insert crackers at the front array and grapes at the back
+shoppingList.unshift('crackers')
+shoppingList.push('grapes')
+
+shoppingList;
+
+
+
 
