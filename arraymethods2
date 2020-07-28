@@ -1,0 +1,16 @@
+// the dogs variables concatinate methods
+var bigDog = ['golden retriever','St.Bernard','German Shepherd', 'bernese Mountain dog'];
+var littleDog = ['terrier','weiner dog','corgie','pomeranian'];
+var allDogs = bigDog.concat(littleDog);
+
+allDogs;
+
+// the cat array
+var cats = ['alley cat', 'fraidy cat', 'scaredy cat'];
+var enemies = bigDog.concat(littleDog,cats);
+enemies;
+
+// the reverse array methods
+var smallestFirst = allDogs.reverse();
+smallestFirst;
+
