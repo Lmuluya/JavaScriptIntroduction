@@ -14,3 +14,49 @@ enemies;
 var smallestFirst = allDogs.reverse();
 smallestFirst;
 
+// sort methods to sort alphabetically 
+var alphaOrder = allDogs.sort();
+alphaOrder;
+
+// slice methods for arrays
+allDogs;
+allDogs.slice(1,4);
+
+// Slice methods with negative numbers
+allDogs.slice(-3,-1);
+
+allDogs.slice(3);
+
+// Lab workings for array methods
+var colors = ['red', 'orange','yellow', 'green', 'blue','Indigp', 'voilet'];
+var colors2 = ['black', 'white', 'brown','purple'];
+// using the concat methods to join the two arrays
+var allColors = colors.concat(colors2);
+allColors;
+
+var colors3 = ['red', 'white', 'blue'];
+var moreAllColors = colors.concat(colors2, colors3);
+moreAllColors;
+
+// reverse all the elements in the allColors array
+// sort all elements in the allColors array by alphabetical order
+
+var reverseColors = allColors.reverse();
+reverseColors;
+
+var alphabetColors = allColors.sort();
+alphabetColors;
+
+var weather = ['rainy', 'cold','chilly','snowy', 'cloudy','hot','warm', 'humid'];
+
+// creating an array value winter with winter values using the slicing method 
+// creating an array value summer with summer values using the slicing method
+
+var winter = weather.slice(0,5);
+winter;
+
+var summer = weather.slice(5,9);
+summer;
+
+//using negative to slice an array
+var winter = weather.slice()
