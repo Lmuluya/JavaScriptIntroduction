@@ -1,0 +1,15 @@
+// Functions without paramenters 
+function morningGreeting() {
+return 'Good morning, its time to get up';
+}
+ morningGreeting();
+
+ // functions with input paramenters
+ function greetPresident(firstName, middleName , lastName) {
+     return ' Hello ' + firstName + middleName + '' + lastName + '!';
+ }
+greetPresident('Lamech ','Muluya ','Kibudde ');
+
+// creating a function thet greets the neignbors 
+
+
