@@ -59,3 +59,15 @@ function dogWalker(person,dog) {
 
 dogWalker('Lamech Muluya','Lucky'); 
 
+// creating an immediately invoked function expression 
+//store the IIFE within a variable and call it 
+(function(person, dog) {
+    return person + ' is taking ' + dog + ' for a walk. ';
+}('Paul', 'Charlie'));
+
+var dogWalker = (function(person, dog) {
+    return person + ' is taking ' + dog + ' for a walk. ';
+}('Paul', 'Charlie'));
+
+dogWalker
+
