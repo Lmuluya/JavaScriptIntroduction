@@ -12,4 +12,50 @@ greetPresident('Lamech ','Muluya ','Kibudde ');
 
 // creating a function thet greets the neignbors 
 
+function goodMorningNeighbor() {
+    return 'Good morning, neignbor!';
+}
+goodMorningNeighbor()
+
+function goodEveningNeighbor() {
+    return 'Good evening neignbor, and thanks for every thing!';
+}
+goodEveningNeighbor();
+
+// icluding paramenters in the function 
+function goodMorningNeighbor(name) {
+    return 'Good morning, ' + name + '!'; 
+}
+ goodMorningNeighbor('Mr Sebwato Samwiri');
+
+function goodEveningNeighbor(name, task) {
+    return ' Good evening, ' + name + ' thanks for ' + task + '!';
+}
+
+goodEveningNeighbor('Mr Rugabwa','cheking on our family yesterday, a great gesture');
+
+// Anonymus function expressions  IFFE (blocks of code run imediately without invocation)
+
+function knockKnock() {
+    return 'Who\'s there?';
+}
+ knockKnock();
+
+// Turning the knockKnock into anonymus function within a function expressions
+// call the function 
+
+// creating an IFFE
+var knockKnock = function() {
+    return 'Who\'s there?';
+}
+knockKnock
+
+knockKnock();
+
+//immediately invoked function expressions
+function dogWalker(person,dog) {
+    return person + ' is taking ' + dog + ' for a walk.';
+}
+
+dogWalker('Lamech Muluya','Lucky'); 
 
