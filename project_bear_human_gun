@@ -1,0 +1,26 @@
+// in this game the best possible outcomes are 
+//a) bear mauls the human
+//b) human disarms the gun
+//c) Gun shoots the bear
+//d) if there is a tie then the game ends in draw
+
+// the code is going to be broken into four parts 
+//1) Get the user choise
+//2) Get the computer choise
+//3) Compare the two choices to determine the winner
+//4)
+
+//create a function getUserChoice with a parameter
+function getUserChoice(userInput) {
+    //turn the feature userInput to lower case
+    userInput = userInput.toLowerCase();
+    if (userInput == 'bear' || userInput == 'human' || userInput == 'gun') {
+        return userInput;
+       } else {
+            return 'Please enter a valid option';
+    }
+}
+console.log(getUserChoice('bear'));
+console.log(getUserChoice('HUMAN'));
+console.log(getUserChoice('gun'));
+console.log(getUserChoice('Kangaroo'));
