@@ -1,0 +1,59 @@
+var scope = 'public'
+function checkScope() {
+    var scope = 'private';
+    return scope;
+}
+// to access the global variable just use the scope variable 
+scope;// the global scope
+// to access the local scope variable we have to use the checksScope 
+checksScope(); // the local scope
+
+
+// Another scope example 
+var scope = 'public';
+var newScope = 'global variable';
+function checkScope() {
+    var scope = 'private';
+    return[scope,newScope];
+}
+
+scope;
+newScope;
+checkScope();
+
+// declaring the VAR key word
+dog = 'Oscar';
+dog;
+
+// function scope lab 
+function roadTrip() {
+    var gallons = 12;  // mpg - miles per gallon 
+    mpg = 34;
+    return gallons * mpg;
+}
+
+roadTrip();
+// nested functions  // volume length and wi
+// global variable scope
+var height = 10;
+function volume() { // parent scope 
+    var width = 10;
+    var length = 10;
+    var volumeOfObject = function() {
+    // local scope or child 
+    return length * width * height; 
+    }
+    // return the value of function expression volumeOfObject
+    return volumeOfObject()
+}
+
+volume();
+
+
+
+
+
+
+
+
+
