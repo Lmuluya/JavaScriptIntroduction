@@ -14,13 +14,72 @@
 function getUserChoice(userInput) {
     //turn the feature userInput to lower case
     userInput = userInput.toLowerCase();
-    if (userInput == 'bear' || userInput == 'human' || userInput == 'gun') {
+    if (userInput === 'bear' || userInput === 'human' || userInput === 'gun') {
         return userInput;
        } else {
             return 'Please enter a valid option';
     }
 }
-console.log(getUserChoice('bear'));
-console.log(getUserChoice('HUMAN'));
-console.log(getUserChoice('gun'));
-console.log(getUserChoice('Kangaroo'));
+//checking the inputs 
+//console.log(getUserChoice('bear'));
+//console.log(getUserChoice('HUMAN'));
+//console.log(getUserChoice('gun'));
+//console.log(getUserChoice('Kangaroo'));
+
+// The generating the computerChoice function 
+
+function getComputerChoice() {
+ var randomNumber = Math.floor(Math.random() * 3); // Using the if statement and else if statement
+ if (randomNumber === 0) {
+     return 'bear';        
+   } else if (randomNumber === 1) {
+       return 'human';
+     } else {
+       return 'gun';     
+     }
+}
+// console.log(getComputerChoice());
+// creating a function to determine the winner
+function determineWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        return ' its a tie ';
+    }
+    // if user selects human
+    if (userChoice === 'human') {
+        //if computer selects 'bear'
+        if (computerChoice === 'bear') {
+            return 'You have been mauled by a bear';
+        } else {
+            return ' You have disarmed the gun'
+      }
+    // if the user selects ' bear'
+    if (userChoice === 'bear') {
+        //if computer selects 'gun'
+        if (computerChoice === gun) {
+            return ' You have been short by the gun';         
+          } else {
+       } 
+     // if user selects 'gun' 
+     if (userChoice === 'gun') {
+        //if computer selection is 'human'
+        if (computerChoice === 'human') {
+            return 'Your guns has been disarmed';
+        } else {
+            return ' You havs shot the bear';
+        }
+     }
+    }
+    }
+}
+
+function playGame() {
+    var promptUserChoice = prompt('Please Choose bear, human, gun');
+    var userChoice = getUserChoice(promptUserChoice);
+    var computerChoice = getComputerChoice();
+    console.log(userChoice);
+    console.log(computerChoice);
+    console.log(determineWinner(userChoice, computerChoice));
+
+}
+
+playGame(); 
